@@ -102,10 +102,6 @@ footer {
     margin: 20px 0 0;
 }
 
-main {
-
-}
-
 form {
     margin: 40px 0;
 }
@@ -170,6 +166,7 @@ td, th {
     font-size: 2em;
     margin: 0 0 1em;
     clear: left;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .principal {
@@ -236,12 +233,19 @@ td, th {
     content: "🟊";
 }
 
-.itens:nth-child(2n) {
+.itens:nth-child(2n+1) {
     font-weight: bold;
 }
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
